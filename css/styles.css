@@ -1,0 +1,281 @@
+:root {
+    --color-black: #000;
+    --color-white: #fff;
+    --color-blue: #2997ff;
+    --color-darkblue: #0066cc;
+    --color-grey: #6e6e73;
+    --color-ligthen-grey: #fbfbfd;
+    --color-darken-grey: #1d1d1f;
+    --header-height: 44px;
+
+}
+
+body {
+    color: var(--color-white);
+}
+
+.container {
+    width: 1280px;
+    margin-inline: auto;
+    max-width: 100%;
+}
+
+.deskrop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+header {
+    background-color: var(--color-black);
+
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: var(--header-height);
+
+    }
+}
+
+.navigation>ul {
+    display: flex;
+
+    li {
+        margin: 0 25px;
+
+        a {
+            font-size: 16px;
+            color: var(--color-white)
+        }
+    }
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+
+    button {
+        margin: 0 25px;
+    }
+}
+
+.section-banner {
+    background-color: var(--color-black);
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+        margin: 50px 0 15px;
+    }
+
+    .banner-img {
+        margin-top: 100px;
+    }
+
+    .link {
+        margin-top: 15px;
+    }
+}
+
+.title {
+    font-size: 56px;
+    line-height: 60px;
+    letter-spacing: -0.28px;
+    font-weight: 700;
+}
+
+.title.black {
+    color: var(--color-black);
+}
+
+link {
+    font-weight: 400;
+    display: block;
+}
+
+.link.large {
+    font-size: 21px;
+}
+
+.link.medium {
+    font-size: 17px;
+}
+
+.link.primary {
+    color: var(--color-blue);
+}
+
+.link.secondary {
+    color: var(--color-darkblue);
+}
+
+.top-description {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: -0.11px;
+    color: var(--color-grey);
+    text-align: center;
+}
+
+.section-banner__secondary {
+    margin-top: 10px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.title.black {
+    margin-top: 30px;
+}
+
+.section-main__product {
+    background-color: var(--color-ligthen-grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .links{
+        margin: 15px 0 20px;
+        display: flex;
+        align-items: center;
+
+        .link{
+            margin: 0 20px;
+        }
+    }
+}
+
+.section-cards {
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        width: calc(738px * 2);
+        max-width: 100%;
+        margin-inline: auto;
+
+        .card-item{
+            width: 730.5px;
+            max-width: calc(50% - 5px);
+            height: 582px;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2.5px;
+            padding-top: 50px;
+
+            .links{
+                display: flex;
+
+                .link {
+                    margin: 10px;
+                }
+            }
+        }
+
+        .card-item:first-child{
+            background-image: url('../img/card-iphone.jpg');
+        }
+        .card-item:nth-child(2){
+            background-image: url('../img/card-ipad.jpg');
+        }
+        .card-item:nth-child(3){
+            background-image: url('../img/card-airpods.jpg');
+        }
+        .card-item:nth-child(4){
+            background-image: url('../img/card-watch.jpg');
+        }
+    }
+}
+
+.description {
+    font-size: 21px;
+    letter-spacing: 0.34px;
+    line-height: 26px;
+}
+
+.description.light {
+    color: var(--color-ligthen-grey);
+}
+
+.description.dark {
+    color: var(--color-darken-grey);
+}
+
+.subtitle {
+    font-size: 40px;
+    font-weight: 700;
+
+}
+
+.subtitle.dark {
+    color: var(--color-darken-grey);
+}
+
+.subtitle.light {
+    color: var(--color-ligthen-grey);
+}
+
+.section-slide {
+    img {
+        width: 100%;
+    }
+}
+
+.glide__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secction-footer{
+    background-color: #F5F5F7;
+}
+
+.footer-list{
+    
+    font-size: 16px;
+    margin-top: 50px;
+    padding: 0 260px;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-grey);
+    
+
+    .footer-description{
+        margin-bottom: 15px;
+    }
+
+    
+    .apple-link {
+        color: var(--color-darken-grey);
+    }
+    
+}
+
+
+
+.footer-topic{
+    margin-top: 50px;
+    padding: 0 260px;
+    flex-direction: column;
+    columns: 5;
+    color: #424245;
+
+    .topics {
+        margin-bottom: 40px;
+    }
+
+    .topics > p {
+        line-height: 12px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+}
